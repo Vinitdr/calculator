@@ -1,0 +1,77 @@
+#include <stdlib.h>
+int main()
+
+{ 
+
+float num1;
+float num2;
+int op;
+float result;
+int i;
+
+for(i=1;i<=1000;i++)
+{
+ 
+  
+printf("\n\nEnter the first number: ");
+scanf("%f",&num1);
+
+printf("Enter the second number: ");
+scanf("%f",&num2);
+
+printf("Choose the Operation you will use:");
+sleep(0.2);
+printf("\n1 for Addition\n");
+sleep(0.3);
+printf("2 for Subtraction \n");
+sleep(0.3);
+printf("3 for Multiplication\n");
+sleep(0.3);
+printf("4 for Division\n");
+sleep(0.3);
+printf("5 for Exponent\n");
+sleep(0.3);
+printf("Input value from 1 - 5 based on the operation you want.");
+scanf("\n%d",&op);
+switch(op)
+{
+  
+
+ case 2 :
+ result = num1-num2;
+ printf("Result of subtraction = %.2f",result);
+ break;
+  
+  case 1 :
+  result = num1+num2;
+  printf("Result of addition = %.2f",result);
+  break;    
+  
+  case 4 :
+  result = num1/num2;
+  printf("Result of division = %.2f",result);
+  break; 
+  
+   case 3 :
+   result = num1*num2;
+   printf("Result of Multiplication = %.2f",result);
+   break;
+    
+   case 5 :
+    result = pow(num1,num2);
+    printf("The exponential result = %.2f",result);
+     break;
+ 
+ default :
+   printf("the operation is not valid");
+   
+   
+ }
+   
+   
+   printf("\n\nHope you like it 🙂.\n\nThis Program was coded by ViniT.") ;
+ printf("\n\n......now start with new calculation...🧮.");
+}
+
+
+}
